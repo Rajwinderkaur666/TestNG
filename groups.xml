@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <run>
+  <include name="Smoke"></include>
+  </run>
+  </groups>
+    <classes>
+    <class name="Groups.LaunchBrowser"/>
+    
+    
+      <class name="Groups.LoginTest">
+      <methods>
+      
+      <include name="login"></include>
+      <include name="Forget_Pass"></include>
+      
+      </methods>
+      </class>
+      
+      <class name="Groups.Logout"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

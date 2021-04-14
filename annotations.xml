@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestNGAnnotations.TestAnnotation">
+      <methods>
+      <include name="VisitGoogle"></include>
+      <include name=" Search"></include>
+      <include name="CopyURL"></include>
+      </methods>
+      </class>
+      <class name="TestNGAnnotations.TestAnnotation">
+      <methods>
+      <include name="PasteURL"></include>
+      <include name=" EnterCredential"></include>
+      <include name="ForgotPWD"></include>
+      </methods>
+      </class>
+      <class name=" TestNGAnnotations.TestAnnotation">
+      <methods>
+      <include name=" ClickPWD"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
